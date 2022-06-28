@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}Home {% endblock title %}
+{% block body %}
+
+    
+
+    <div class="container">
+        <h2>Update Tracker</h2>
+        <form action="/update/{{tracker.sno}}" method="POST">
+            <div class="mb-3">
+                <label for="title" class="form-label">Tracker Name</label>
+                <input type="text" class="form-control" name="title" id="title" value="{{tracker.title}}">
+            </div>
+            <div class="mb-3">
+                <label for="desc" class="form-label">Tracker Description</label>
+                <input type="text" class="form-control" name="desc" id="desc" value="{{tracker.desc}}">
+            </div>
+
+            <button type="submit" class="btn btn-dark" alert = "Are You sure?">Update</button>
+        </form>
+    </div>
+
+
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    {% endblock body %}
