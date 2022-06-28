@@ -1,3 +1,3 @@
 Self Quantified is used to make custom trackers and add logs corresponding to it. 
 The application displays all the respective trackers and logs along with graphical trendlines. 
-Made using python, flask, sql alchemy, html and css.
+Made using Python, flask, sql alchemy, html and css. 
